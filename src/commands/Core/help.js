@@ -79,7 +79,7 @@ export async function createInitialHelpMenu(client) {
     const embed = createEmbed({
         title: `📖 ${botName} Help`,
         description: 'Set up your server, pick what to enable, then browse commands below.',
-        color: 'primary',
+        color: '#2B2D31',
         thumbnail: client.user?.displayAvatarURL?.({ size: 1024 }),
         fields: [
             {
@@ -119,7 +119,7 @@ export async function createInitialHelpMenu(client) {
 
     const supportButton = new ButtonBuilder()
         .setLabel("Support Server")
-        .setURL("https://discord.gg/QnWNz2dKCE")
+        .setURL("https://discord.gg/QSNxYd8mFS")
         .setStyle(ButtonStyle.Link);
 
     const selectRow = createSelectMenu(
