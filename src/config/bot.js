@@ -93,12 +93,12 @@ export const botConfig = {
   embeds: {
     colors: {
       // Main brand colors.
-      primary: "#336699",
-      secondary: "#2F3136",
+      primary: "#D4AF37",
+      secondary: "#1A1A1A",
 
       // Standard status colors for success/error/warning/info messages.
-      success: "#57F287",
-      error: "#ED4245",
+      success: "#2E8B57",
+      error: "#8B0000",
       warning: "#FEE75C",
       info: "#3498DB",
 
@@ -141,7 +141,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "The Midnight Lounge • Concierge Service",
       // Footer icon URL (null = no icon).
       icon: null,
     },
