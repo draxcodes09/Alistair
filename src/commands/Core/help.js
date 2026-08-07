@@ -111,34 +111,16 @@ export async function createInitialHelpMenu(client) {
         text: "Made with ❤️" 
     });
     embed.setTimestamp();
-
-    const bugReportButton = new ButtonBuilder()
-        .setCustomId(BUG_REPORT_BUTTON_ID)
-        .setLabel("Report Bug")
-        .setStyle(ButtonStyle.Danger);
-
-    const supportButton = new ButtonBuilder()
-        .setLabel("Support Server")
-        .setURL("https://discord.gg/QSNxYd8mFS")
-        .setStyle(ButtonStyle.Link);
-
-    const selectRow = createSelectMenu(
+const selectRow = createSelectMenu(
         CATEGORY_SELECT_ID,
         "Select to view the commands",
         options,
     );
 
-    const buttonRow = new ActionRowBuilder().addComponents([
-        bugReportButton,
-        supportButton,
-    ]);
-
     return {
         embeds: [embed],
-        components: [buttonRow, selectRow],
+        components: [selectRow],
     };
-}
-
 export default {
     slashOnly: true,
     data: new SlashCommandBuilder()
